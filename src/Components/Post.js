@@ -2,6 +2,9 @@ import React from 'react';
 
 const Post = ({post}) => {
     const {id, title,body}= post;
+    const click = {postId}=>{
+        console.log(postId);
+    }
     return (
         <div>
             <br/>
@@ -10,7 +13,7 @@ const Post = ({post}) => {
             <div>title:{title}</div>
 
             <div>body:{body}</div>
-            <button onClick={'Details'}/>
+            <button onClick={()=> click(id)}> INFO</button>
         </div>
     );
 };

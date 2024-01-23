@@ -1,13 +1,16 @@
 import React,{useEffect,useState} from 'react';
 import Post from "./Post";
-import axios from "axios";
+
+
+import {postServise} from "../Servises/postServise";
 
 const Posts = () => {
     const [posts,setPosts]=useState([]);
 
     useEffect(() => {
         //fetch('https://jsonplaceholder.typicode.com/posts').then(res=>res.json()).then(value => setPosts(value))
-        axios.get('https://jsonplaceholder.typicode.com/posts').then(({data})=> setPosts(data))
+        //axiosServise.get('/posts').then(({data})=> setPosts(data))
+        postServise.getAll().then(({data})=>setPosts(data))
 
     },[]);
     return (
