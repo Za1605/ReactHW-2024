@@ -4,7 +4,7 @@ import Launches from "./Components/Launches";
 const App = () => {
   return (
       <div>
-<Launches/>
+       <Launches/>
       </div>
   );
 };
