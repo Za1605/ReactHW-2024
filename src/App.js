@@ -1,11 +1,13 @@
 import React from 'react';
-import UsForm from "./components/UserContainer/UsForm";
+
+
+import Users from "./components/UserContainer/Users";
+
 
 const App = () => {
     return (
         <div>
-          <UsForm/>
-            hello
+        <Users/>
         </div>
     );
 };
