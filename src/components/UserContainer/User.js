@@ -3,6 +3,7 @@ import React from 'react';
 
 
 const User = ({user}) => {
+
     const {id, name, username} = user;
     return (
         <div>
@@ -15,4 +16,6 @@ const User = ({user}) => {
     );
 };
 
-export {User}
+export {
+    User
+}
